@@ -27,8 +27,8 @@ check_cooling:
     j end
 
 check_off_logic:
-    # Estado ON, apagar si temperatura cae por debajo de 60
-    li t2, 60
+    # Estado ON, apagar si temperatura cae por debajo de 55
+    li t2, 55
     blt s0, t2, action_turn_off
     j end
 
